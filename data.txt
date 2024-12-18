@@ -1,0 +1,5 @@
+-----------------------------------------------------------------------------------------
+Benchmark                                               Time             CPU   Iterations
+-----------------------------------------------------------------------------------------
+sequential/iterations:5/process_time/real_time 1.1724e+10 ns   1.1300e+10 ns            5
+parallel/iterations:5/process_time/real_time    351995660 ns    519794349 ns            5
