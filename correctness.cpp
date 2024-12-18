@@ -42,20 +42,20 @@ static Graph generate2d() {
     return gr;
 }
 
-// TEST(seq_correct, 1d) {
-//     auto gr = generate1d();
-//     ASSERT_EQ(bfs_seq(gr, 0, size1d - 1), size1d - 1);
-// }
-//
+TEST(seq_correct, 1d) {
+    auto gr = generate1d();
+    ASSERT_EQ(bfs_seq(gr, 0, size1d - 1), size1d - 1);
+}
+
 TEST(seq_correct, 2d) {
     auto gr = generate2d();
     ASSERT_EQ(bfs_seq(gr, 0, gr.size() - 1), size1_2d + size2_2d - 2);
 }
 
-// TEST(par_correct, 1d) {
-//     auto gr = generate1d();
-//     ASSERT_EQ(bfs_par(gr, 0, size1d - 1), size1d - 1);
-// }
+TEST(par_correct, 1d) {
+    auto gr = generate1d();
+    ASSERT_EQ(bfs_par(gr, 0, size1d - 1), size1d - 1);
+}
 
 TEST(par_correct, 2d) {
     auto gr = generate2d();

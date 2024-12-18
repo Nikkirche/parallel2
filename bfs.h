@@ -65,7 +65,7 @@ inline uint32_t bfs_par(const Graph &graph, const uint32_t start, const uint32_t
                     }
                 }
             }
-            front = std::move(front);
+            front = std::move(front_new);
         }
         iter++;
     }
